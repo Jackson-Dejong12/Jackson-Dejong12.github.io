@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Attire Customizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Duck Attire Customizer</h1>
+            <p>Customize your perfect duck outfit</p>
+        </header>
+
+        <main>
+            <!-- Customization Panel -->
+            <section class="customization-panel">
+                <h2>Customize Your Attire</h2>
+                
+                <!-- Garment Type Selection -->
+                <div class="form-group">
+                    <label for="garment-type">Select Garment Type:</label>
+                    <select id="garment-type" class="dropdown">
+                        <option value="">-- Choose a garment --</option>
+                        <option value="sweatshirt">Sweatshirt</option>
+                        <option value="pants">Pants</option>
+                        <option value="jacket">Jacket</option>
+                    </select>
+                </div>
+
+                <!-- Color Selection -->
+                <div class="form-group">
+                    <label for="color">Select Color:</label>
+                    <select id="color" class="dropdown" disabled>
+                        <option value="">-- Choose a color --</option>
+                    </select>
+                </div>
+
+                <!-- Size Selection -->
+                <div class="form-group">
+                    <label for="size">Select Size:</label>
+                    <select id="size" class="dropdown" disabled>
+                        <option value="">-- Choose a size --</option>
+                    </select>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <button id="preview-btn" class="btn btn-primary" disabled>Preview Customization</button>
+                    <button id="reset-btn" class="btn btn-secondary">Reset All</button>
+                </div>
+            </section>
+
+            <!-- Display Area -->
+            <section class="display-area">
+                <h2>Your Customization</h2>
+                <div id="product-display" class="product-display">
+                    <div class="placeholder">
+                        <p>Select options above to see your customized attire</p>
+                    </div>
+                </div>
+                
+                <!-- Summary Display -->
+                <div id="summary" class="summary">
+                    <h3>Customization Summary</h3>
+                    <div id="summary-content">
+                        <p>No selections made yet.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Tab Navigation (Additional HTML structure) -->
+        <section class="tabs-section">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="customize">Customize</button>
+                <button class="tab-btn" data-tab="gallery">Gallery</button>
+                <button class="tab-btn" data-tab="info">Info</button>
+            </div>
+            <div class="tab-content" id="customize-tab">
+                <p>Use the customization panel above to create your perfect duck attire!</p>
+            </div>
+            <div class="tab-content hidden" id="gallery-tab">
+                <h3>Popular Combinations</h3>
+                <div id="gallery-grid" class="gallery-grid">
+                </div>
+            </div>
+            <div class="tab-content hidden" id="info-tab">
+                <h3>About Duck Attire</h3>
+                <p>Our premium duck attire collection features high-quality materials and vibrant colors. Each piece is carefully designed for comfort and style.</p>
+                <ul>
+                    <li>100% Premium Duck-Friendly Materials</li>
+                    <li>Available in Multiple Sizes</li>
+                    <li>Wide Range of Colors</li>
+                    <li>Machine Washable</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
